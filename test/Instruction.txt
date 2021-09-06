@@ -44,6 +44,11 @@ Step 4 : Delete branch
    git branch -d “branch name”    — delete from local
    git push origin —delete “branch name”   — delete from remote
 -------------------------------------------------
+Step 1 : Create branch git branch “branch name”
+ Step 2 : Checkout branch git checkout “branch name”
+ Step 3 : Merge new branch in master branch git merge “branch name” 
+Step 4 : Delete branch git branch -d “branch name”	 — delete from local 
+Step 5 :  git push origin --delete “branch name”		 	— delete from remote
 
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha
@@ -52,56 +57,15 @@ Initialized empty Git repository in D:/BIYAS-TUTORIALS/TAU-Mocha/.git/
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git status
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        README.md
-        package-lock.json
-        package.json
-        test/
-
-nothing added to commit but untracked files present (use "git add" to track)
-
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git add .
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git status
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   README.md
-        new file:   package-lock.json
-        new file:   package.json
-        new file:   test/.DS_Store
-        new file:   test/chai.js
-        new file:   test/chai_config.js
-        new file:   test/chapterFourFive.js
-        new file:   test/chapterSix.js
-        new file:   test/chapterThree.js
-        new file:   test/chapterTwo.js
-
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git commit -m "Files are added for TAU_Mocha project"
-[master (root-commit) a9be7c0] Files are added for TAU_Mocha project
- 10 files changed, 2237 insertions(+)
- create mode 100644 README.md
- create mode 100644 package-lock.json
- create mode 100644 package.json
- create mode 100644 test/.DS_Store
- create mode 100644 test/chai.js
- create mode 100644 test/chai_config.js
- create mode 100644 test/chapterFourFive.js
- create mode 100644 test/chapterSix.js
- create mode 100644 test/chapterThree.js
- create mode 100644 test/chapterTwo.js
+
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git status
@@ -113,84 +77,74 @@ $ git remote add origin https://github.com/Ban-biaysme/TAU_Mocha_Demo.git
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git push -u origin master
-Enumerating objects: 13, done.
-Counting objects: 100% (13/13), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (13/13), done.
-Writing objects: 100% (13/13), 21.04 KiB | 3.00 MiB/s, done.
-Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), done.
-To https://github.com/Ban-biaysme/TAU_Mocha_Demo.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$ git branch "TAU_Mocha_NewBranch"
+$ git branch TAY_MochaV.1
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$ ^C
+$ git checkout TAY_MochaV.1
+Switched to branch 'TAY_MochaV.1'
 
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$ git checkout TAU_Mocha_NewBranch
-Switched to branch 'TAU_Mocha_NewBranch'
-
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAU_Mocha_NewBranch)
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAY_MochaV.1)
 $ git status
-On branch TAU_Mocha_NewBranch
+On branch TAY_MochaV.1
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        Info/
+        test/Instruction.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAU_Mocha_NewBranch)
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAY_MochaV.1)
 $ git add .
 
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAU_Mocha_NewBranch)
-$ git commit -m "Info folder and instrustion file addeed with git info"
-[TAU_Mocha_NewBranch 1f60894] Info folder and instrustion file addeed with git info
- 1 file changed, 134 insertions(+)
- create mode 100644 Info/INstruction
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAY_MochaV.1)
+$ git commit -m "Instruction file added"
+[TAY_MochaV.1 5101b0b] Instruction file added
+ 1 file changed, 216 insertions(+)
+ create mode 100644 test/Instruction.txt
 
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAU_Mocha_NewBranch)
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAY_MochaV.1)
 $ git status
-On branch TAU_Mocha_NewBranch
+On branch TAY_MochaV.1
 nothing to commit, working tree clean
 
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAU_Mocha_NewBranch)
-$ git push -u origin TAU_Mocha_NewBranch
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (4/4), 1.84 KiB | 1.84 MiB/s, done.
-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote:
-remote: Create a pull request for 'TAU_Mocha_NewBranch' on GitHub by visiting:
-remote:      https://github.com/Ban-biaysme/TAU_Mocha_Demo/pull/new/TAU_Mocha_NewBranch
-remote:
-To https://github.com/Ban-biaysme/TAU_Mocha_Demo.git
- * [new branch]      TAU_Mocha_NewBranch -> TAU_Mocha_NewBranch
-Branch 'TAU_Mocha_NewBranch' set up to track remote branch 'TAU_Mocha_NewBranch' from 'origin'.
-
-Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAU_Mocha_NewBranch)
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAY_MochaV.1)
+$ git push -u origin TAY_MochaV.1
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (TAY_MochaV.1)
 $ git checkout master
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$ git merge TAU_Mocha_NewBranch
-HEAD                         origin/TAU_Mocha_NewBranch
-TAU_Mocha_NewBranch          origin/master
-master
+$ git merge TAY_MochaV.1
+Updating a9be7c0..5101b0b
+Fast-forward
+ test/Instruction.txt | 216 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 216 insertions(+)
+ create mode 100644 test/Instruction.txt
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git push -u origin master
-Everything up-to-date
-Branch 'master' set up to track remote branch 'master' from 'origin'.
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git branch -d TAY_MochaV.1
+Deleted branch TAY_MochaV.1 (was 5101b0b).
+
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git push origin --delete TAY_MochaV.1
+To https://github.com/Ban-biaysme/TAU_Mocha_Demo.git
+ - [deleted]         TAY_MochaV.1
+
+How to trigger notification email from github whenever there is any change/commit in the project 
+Step 1 : Github - Repository - Settings - integration & services - add email 
+Step 2 : Test and validate by making some change in the project
+
+1.	What are tags / releases 2. Why should i create TAGs 3. When to create TAGs 4. How to create TAGs in git create | show | publish | delete Step 1: Checkout the branch where you want to create the tag git checkout "branch name" example : git checkout master ________________________________________________________ 
+2.	Step 2: Create tag with some name git tag "tag name" example : git tag v1.0 git tag -a v1.0 -m "ver 1 of .." (to create annotated tags) ________________________________________________________
+3.	 Step 3: Display or Show tags git tag git show v1.0 git tag -l “v1.*” ________________________________________________________
+4.	 Step 4: Push tags to remote git push origin v1.0 git push origin --tags git push --tags (to push all tags at once) ________________________________________________________ 
+5.	Step 5: Delete tags (if required only) to delete tags from local : git tag -d v1.0 git tag --delete v1.0 to delete tags from remote : git push origin -d v1.0 git push origin --delete v1.0 git push origin :v1.0 to delete multiple tags at once: git tag -d v1.0 v1.1 (local) git push origin -d v1.0 v1.1 (remote) ________________________________________________________
+6.	 Checking out TAGS We cannot checkout tags in git We can create a branch from a tag and checkout the branch git checkout -b "branch name" "tag name" example : git checkout -b ReleaseVer1 v1.0 ________________________________________________________
+7.	Creating TAGS from past commits git tag "tag name" "reference of commit" example : git tag v1.2 5fcdb03
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
 $ git checkout master
@@ -198,19 +152,37 @@ Already on 'master'
 Your branch is up to date with 'origin/master'.
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$ git push -u origin master
-Everything up-to-date
-Branch 'master' set up to track remote branch 'master' from 'origin'.
+$ git tag v1.0
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$ git branch -d TAU_Mocha_NewBranch
-warning: deleting branch 'TAU_Mocha_NewBranch' that has been merged to
-         'refs/remotes/origin/TAU_Mocha_NewBranch', but not yet merged to HEAD.
-Deleted branch TAU_Mocha_NewBranch (was 1f60894).
+$ git tag
+v1.0
 
 Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
-$ git push origin --delete TAU_Mocha_NewBranch
-To https://github.com/Ban-biaysme/TAU_Mocha_Demo.git
- - [deleted]         TAU_Mocha_NewBranch
+$ git tag -a v1.1 -m "Tag for release version 1.1"
+
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git tag
+v1.0
+v1.1
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git tag -l "v1.*"
+
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git push origin v1.0
+
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git tag -d v1.1
+Deleted tag 'v1.1' (was a2e5526)
+
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git tag
+
+Biyas-Anirban@LAPTOP-8THLD532 MINGW64 /d/BIYAS-TUTORIALS/TAU-Mocha (master)
+$ git push origin -d v1.0
+
+git merge - Is a non-destructive operation - Existing branches are not changed in any way - Creates a new merge commit in the feature branch 
+git rebase - Moves the entire feature branch to begin on the tip of the master branch - Re-writes the project history - We get much cleaner and linear project history
+
 
 
