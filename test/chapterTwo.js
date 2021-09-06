@@ -53,6 +53,11 @@ describe('Mathematical Operations - Test Suite', function(){
     assert.equal(c,1);
   });
 
+  it('Division of two numbers', function(){
+    var c = a%b;
+    assert.equal(c,0);
+  });
+
   it('It is a pending test in Mocha');
 
 });
